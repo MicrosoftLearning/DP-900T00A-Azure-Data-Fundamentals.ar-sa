@@ -2,27 +2,22 @@
 lab:
   title: استكشاف Azure Stream Analytics
   module: Explore data analytics in Azure
-ms.openlocfilehash: 925607333098d0774839d705d4e055a78e32de27
-ms.sourcegitcommit: e73a39e323ef061919b58561ff1afdca876ad2b5
-ms.translationtype: HT
-ms.contentlocale: ar-SA
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "141493685"
 ---
+
 ## <a name="explore-azure-stream-analytics"></a>استكشاف Azure Stream Analytics
 
 في هذا الإجراء، ستقوم بتوفير وظيفة Azure Stream Analytics في اشتراكك في Azure، واستخدامها لمعالجة دفق من البيانات في الوقت الفعلي.
 
-> **ملاحظة**: يعد التمرين جزءًا من وحدة نمطية على Microsoft Learn، ويتضمن خيارًا لاستخدام اشتراك Azure في *وضع الحماية*. ومع ذلك، إذا كنت تكمل هذا التمرين كجزء من فصل دراسي بقيادة المدرب، فيجب عليك استخدام اشتراك Azure المتوفر كجزء من الفصل الدراسي بدلًا من وضع الحماية.
+> <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The exercise is part of a module on Microsoft Learn, and includes an option to use a <bpt id="p2">*</bpt>sandbox<ept id="p2">*</ept> Azure subscription. However, if you are completing this exercise as part of an instructor-led class, you should use the Azure subscription provided as part of the class instead of the sandbox.
 
 قبل بدء التمرين على Microsoft Learn، ستحتاج إلى إعداد بيئة سحابية shell لاشتراكك في Azure.
 
 1. سجل الدخول إلى اشتراكك في Azure في [مدخل Microsoft Azure](https://portal.azure.com) على `https://portal.azure.com`، باستخدام بيانات اعتماد اشتراك Azure.
-2. استخدم الزر **[\>_]** الموجود على يسار شريط البحث في أعلى الصفحة لإنشاء Cloud Shell جديد في مدخل Microsoft Azure، وتحديد بيئة **_Bash_** وإنشاء مساحة تخزين إذا طلب منك ذلك. يوفر shell السحابي واجهة سطر أوامر في جزء أسفل مدخل Microsoft Azure، كما هو موضح هنا:
+2. Use the <bpt id="p1">**</bpt>[<ph id="ph1">\&gt;</ph>_]<ept id="p1">**</ept> button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a <bpt id="p2">***</bpt>Bash<ept id="p2">***</ept> environment and creating storage if prompted. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
 
     ![مدخل Microsoft Azure مع جزء shell سحابي](./images/cloud-shell.png)
 
-3. لاحظ أنه يمكنك تغيير حجم غلاف السحابة عن طريق سحب شريط الفاصل أعلى الجزء، أو باستخدام أيقونات **&#8212;** و **&#9723;** و **X** في أعلى يسار الجزء لتصغير الجزء وتكبيره وإغلاقه. لمزيد من المعلومات حول استخدام Azure Cloud Shell، راجع [وثائق Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview).
+3. Note that you can resize the cloud shell by dragging the separator bar at the top of the pane, or by using the <bpt id="p1">**</bpt>&amp;#8212;<ept id="p1">**</ept>, <bpt id="p2">**</bpt>&amp;#9723;<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>X<ept id="p3">**</ept> icons at the top right of the pane to minimize, maximize, and close the pane. For more information about using the Azure Cloud Shell, see the <bpt id="p1">[</bpt>Azure Cloud Shell documentation<ept id="p1">](https://docs.microsoft.com/azure/cloud-shell/overview)</ept>.
 
 4. أنت الآن جاهز لإكمال التمرين على Microsoft Learn - ما عليك سوى الاعتياد على استخدام shell السحابي في مدخل Microsoft Azure بدلًا من العبارة (الفارغة) في الوحدة النمطية Learn (التي يتم توفيرها للمتعلمين الذاتيين باستخدام اشتراك وضع الحماية).
 
