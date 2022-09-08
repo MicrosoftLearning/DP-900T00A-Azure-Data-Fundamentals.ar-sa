@@ -45,8 +45,8 @@ lab:
 
 1. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
 
-    ![لقطة شاشة لمدخل Azure تعرض صفحة "Azure Database for PostgreSQL".](images/postgresql-portal.png)
+    ![لقطة شاشة لمدخل Azure تعرض صفحة Azure Database for PostgreSQL.](images/postgresql-portal.png)
 
-1. راجع خيارات إدارة مورد Azure Database for PostreSQL.
+1. راجع خيارات إدارة مورد Azure Database for PostgreSQL.
 
-> **تلميح**: يمكنك حذف مجموعة الموارد التي أنشأتها في هذا التمرين إذا انتهيت من استكشاف Azure Database for PostreSQL.
+> **تلميح**: يمكنك حذف مجموعة الموارد التي أنشأتها في هذا التمرين إذا انتهيت من استكشاف Azure Database for PostgreSQL.
