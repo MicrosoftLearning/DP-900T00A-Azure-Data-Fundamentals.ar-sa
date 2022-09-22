@@ -1,9 +1,9 @@
 ---
 lab:
-  title: استكشاف Azure Cosmos DB
+  title: استكشاف البيانات غير الارتباطية في Azure باستخدام Azure Cosmos DB
   module: Explore fundamentals of Azure Cosmos DB
 ---
-# <a name="explore-azure-cosmos-db"></a>استكشاف Azure Cosmos DB
+# <a name="explore-non-relational-data-in-azure-with-azure-cosmos-db"></a>استكشاف البيانات غير الارتباطية في Azure باستخدام Azure Cosmos DB
 
 في هذا التمرين، ستقوم بتوفير قاعدة بيانات Azure Cosmos DB في اشتراكك في Azure، واستكشاف الطرق المختلفة التي يمكنك استخدامها لتخزين البيانات غير العلائقية.
 

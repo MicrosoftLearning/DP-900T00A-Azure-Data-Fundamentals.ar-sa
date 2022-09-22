@@ -21,8 +21,8 @@ lab:
 1. إذا لم تكن فعلت ذلك، فسجّل الدخول إلى [مدخل Microsoft Azure](https://portal.azure.com?azure-portal=true).
 1. On the Azure portal home page, select <bpt id="p1">**</bpt>&amp;#65291; Create a resource<ept id="p1">**</ept> from the upper left-hand corner and search for <bpt id="p2">*</bpt>Storage account<ept id="p2">*</ept>. Then in the resulting <bpt id="p1">**</bpt>Storage account<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Create<ept id="p2">**</ept>.
 1. أدخل القيم التالية في الصفحة **إنشاء حساب تخزين**:
-    - **الاشتراك**: حدد اشتراك Azure الخاص بك.
-    - **مجموعة الموارد**: قم بإنشاء مجموعة موارد جديدة باسم من اختيارك.
+    - <bpt id="p1">**</bpt>Subscription<ept id="p1">**</ept>: If you're using a sandbox, select <bpt id="p2">*</bpt>Concierge Subscription<ept id="p2">*</ept>. Otherwise, select your Azure subscription.
+    - **Resource group**: إذا كنت تستخدم بيئة الاختبار المعزولة، فحدد مجموعة الموارد الموجودة (والتي سيكون لها اسم مثل *learn-xxxx...* ). وإلا، أنشئ مجموعة موارد جديدة وامنحها الاسم الذي تختاره.
     - **اسم حساب التخزين**: أدخل اسماً فريداً لحساب التخزين باستخدام الأحرف الصغيرة والأرقام.
     - **Region**: حدد أي موقع متاح.
     - **الأداء**: *قياسي*
@@ -48,7 +48,7 @@ lab:
 1. في صفحة متصفح موقع التخزين، حدد **Blob containers** وتحقق من إدراج الحاوية **data**.
 1. حدد حاوية **data**، ولاحظ أنها فارغة.
 1. حدد " **&#65291; Add Directory**" واقرأ المعلومات عن المجلدات قبل إنشاء دليل جديد باسم **products**.
-1. في مستعرض التخزين، تحقق من أن طريقة العرض الحالية تُظهر محتويات مجلد **المنتجات** الذي أنشأته للتو - لاحظ أن "فتات التنقل" في أعلى الصفحة تعكس مسار **حاويات Blob> البيانات> المنتجات**.
+1. في "مستكشف التخزين"، تحقق من أن طريقة العرض الحالية تعرض محتويات المجلد "**products**" الذي أنشأته للتو - لاحظ أن "breadcrumbs" أعلى الصفحة تعكس المسار **Blob containers > data > products**.
 1. في مسارات التنقل، حدد **data** للتبديل إلى الحاوية **data**، ولاحظ أنها <u>لا</u> تحتوي على مجلد باسم **products**.
 
     Folders in blob storage are virtual, and only exist as part of the path of a blob. Since the <bpt id="p1">**</bpt>products<ept id="p1">**</ept> folder contained no blobs, it isn't really there!
@@ -68,11 +68,11 @@ Azure Data Lake Store Gen2 support enables you to use hierarchical folders to or
 
 1. قم بتنزيل ملف JSON [product2.json](https://aka.ms/product2.json?azure-portal=true) من `https://aka.ms/product2.json` واحفظه على جهاز الكمبيوتر في نفس المجلد حيث قمت بتنزيل **product1.json** مسبقاً - ستقوم بتحميله إلى تخزين كائن ثنائي كبير الحجم لاحقاً).
 1. في صفحة مدخل Microsoft Azure لحساب التخزين، على الجانب الأيسر، مرر لأسفل إلى القسم "**Settings**"، وحدد "**Data Lake Gen2 upgrade**".
-1. In the ****Data Lake Gen2 upgrade**** page, expand and complete each step to upgrade your storage account to enable hierarchical namespace and support Azure Data Lake Storage Gen 2. This may take some time.
+1. في الصفحة الرئيسية لمدخل Microsoft Azure، حدد " **&#65291; Create a resource**" من الزاوية العلوية اليسرى وابحث عن "*Storage account*".
 1. عند اكتمال الترقية، في الجزء الموجود على الجانب الأيسر، في القسم العلوي، حدد "**Storage browser**" وانتقل مرة أخرى إلى جذر حاوية الكائن الثنائي كبير الحجم **data**، التي لا تزال تحتوي على المجلد "**product_data**".
 1. حدد المجلد **product_data**، وتحقق من أنه لا يزال يحتوي على ملف **product1.json** الذي قمت بتحميله مسبقاً.
 1. استخدم الزر " **&#10514; Upload**" لفتح اللوحة "**Upload blob**".
-1. في الصفحة الرئيسية لمدخل Microsoft Azure، حدد " **&#65291; Create a resource**" من الزاوية العلوية اليسرى وابحث عن "*Storage account*".
+1. ثم في صفحة **حساب التخزين** الناتجة، حدد **"Create"**.
 1. أغلق اللوحة **Upload blob** إذا كانت لا تزال مفتوحة، وتحقق من أن المجلد **product_data** يحتوي الآن على الملف **product2.json.**
 1. على الجانب الأيسر، في القسم **Data storage**، حدد **Containers**.
 1. افتح الحاوية **data**، وتحقق من إدراج المجلد **product_data** الذي أنشأته.
@@ -86,7 +86,7 @@ Azure Data Lake Store Gen2 support enables you to use hierarchical folders to or
 1. في صفحة مدخل Microsoft Azure لحاوية التخزين الخاصة بك، على الجانب الأيسر، في قسم **Data storage**، حدد **File shares**.
 1. في صفحة "File shares"، حدد " **&#65291; File share**" وأضف مشاركة ملف جديدة باسم **files** باستخدام الطبقة "**Transaction optimized**".
 1. في **File shares**، افتح مشاركة **الملفات** الجديدة.
-1. ثم في صفحة **حساب التخزين** الناتجة، حدد **"Create"**.
+1. At the top of the page, select <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>. Then in the <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept> pane, note that there are tabs for common operating systems (Windows, Linux, and macOS) that contain scripts you can run to connect to the shared folder from a client computer.
 1. أغلق الجزء **Connect** ثم أغلق الصفحة **files** للعودة إلى الصفحة **File shares** على حساب Azure storage.
 
 ## <a name="explore-azure-tables"></a>استكشاف Azure Tables
