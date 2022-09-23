@@ -1,10 +1,10 @@
 ---
 lab:
-  title: استكشاف تخزين Azure
+  title: استكشاف البيانات غير الارتباطية في Azure باستخدام Azure Storage
   module: Explore Azure Storage for non-relational data
 ---
 
-# <a name="explore-azure-storage"></a>استكشاف تخزين Azure
+# <a name="explore-non-relational-data-in-azure-with-azure-storage"></a>استكشاف البيانات غير الارتباطية في Azure باستخدام Azure Storage
 
 في هذا التمرين، ستقوم بتوفير حساب Azure Storage في اشتراكك في Azure، واستكشاف الطرق المختلفة التي يمكنك استخدامها لتخزين البيانات.
 
