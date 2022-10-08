@@ -20,7 +20,7 @@ lab:
 
 1. افتح مدخل Microsoft Azure على [https://portal.azure.com](https://portal.azure.com?azure-portal=true)، وقم بتسجيل الدخول باستخدام حساب Microsoft المقترن باشتراك Azure.
 
-    > <bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>:  Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
+    >                 **تلميح**: تأكد من أنك تعمل في الدليل الذي يحتوي على اشتراكك - المُشار إليه في أعلى اليمين أسفل معرّف مستخدمك. إذا لم تكن كذلك، حدد رمز المستخدم وبدّل الدليل.
 
 2. في مدخل Microsoft Azure، في صفحة **"Home"**، استخدم **&#65291; إنشاء رمز مورد** لإنشاء مورد جديد.
 3. ابحث عن *Azure Synapse Analytics*، وإنشاء مورد **Azure Synapse Analytics** جديد باستخدام الإعدادات التالية:
@@ -43,7 +43,7 @@ lab:
         - **اسم الحساب**: *إنشاء حساب جديد باسم فريد، على سبيل المثال "<your_name> datalake"*.
         - **اسم نظام الملفات**: *إنشاء نظام ملفات جديد باسم فريد، على سبيل المثال "fs<your_name>"*.
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
+    >                 **ملاحظة**: تتطلب مساحة عمل Synapse Analytics مجموعتين من الموارد في اشتراك Azure، مجموعة للموارد التي تُنشئها صراحةً وأخرى للموارد المُدارة التي تستخدمها الخدمة. كما يتطلب حساب تخزين مستودع بيانات لتخزين البيانات والبرامج النصية والبيانات الاصطناعية الأخرى.
 
 4. عند إدخال هذه التفاصيل، حدد **"Review + create"**، ثم حدد **"Create"** لإنشاء مساحة العمل.
 5. انتظر حتى يتم إنشاء مساحة العمل - قد يستغرق ذلك خمس دقائق أو نحو ذلك.
@@ -57,11 +57,11 @@ lab:
 
 واحدة من المهام الرئيسية التي يمكنك القيام بها مع Azure Synapse Analytics هي تحديد *البنية الأساسية لبرنامج ربط العمليات التجارية* التي تنقل (وإذا لزم الأمر، تُحوّل) البيانات من مجموعة واسعة من المصادر إلى مساحة العمل الخاصة بك للتحليل.
 
-1. في Synapse Studio، في صفحة **Home**، حدد **Ingest** ثم حدد **Built-in copy task** لفتح أداة **Copy Data tool**.
+1. في Synapse Studio، في الصفحة **Home**، حدد **Ingest** لفتح أداة **Copy Data**.
 2. في أداة Copy Data، في خطوة **"Properties"**، تأكد من تحديد **"Built-in copy task"** و **"Run once now"**، ثم انقر فوق **"Next >"**.
 3. في خطوة **"Source"** في الخطوة الفرعية **"Dataset"** حدد الإعدادات التالية:
     - **Source type**: الكل
-    - **Connection**: *أنشئ اتصالا جديدا، وفي جزء **Linked service** الذي يظهر، في علامة التبويب **File**، حدد **HTTP**. ثم تابع وأنشئ اتصالا بملف بيانات باستخدام الإعدادات التالية:*
+    - **Connection**: *أنشئ اتصالاً جديدًا، وفي جزء **New connection** الذي يظهر، في علامة التبويب **File**، حدد **HTTP**. ثم تابع وأنشئ اتصالاً بملف بيانات باستخدام الإعدادات التالية:*
         - **"Name"**: منتجات شركة مغامرة
         - **"Description"**: قائمة المنتجات عبر HTTP
         - **"Connect via integration runtime"**: AutoResolveIntegrationRuntime
@@ -91,7 +91,7 @@ lab:
     - **سلوك النسخ**: بلا
     - **أقصى الاتصالات المتزامنة**: *اتركه فارغاً*
     - **حجم الكتلة (ميغا بايت)**: *اتركه فارغاً*
-9. On the <bpt id="p1">**</bpt>Target<ept id="p1">**</ept> step, in the <bpt id="p2">**</bpt>Configuration<ept id="p2">**</ept> substep, ensure that the following properties are selected. Then select <bpt id="p1">**</bpt>Next &gt;<ept id="p1">**</ept>:
+9. في خطوة **"Target"** في الخطوة الفرعية **"Configuration"** تأكد من تحديد الخصائص التالية. ثم حدد **"Next >"**:
     - **File format**: DelimitedText
     - **عمود محدِّد**: فاصلة (،)
     - **صف محدِّد**: موجز الخط (\n)
@@ -108,13 +108,13 @@ lab:
 11. في خطوة **"Review and finish"** في الخطوة الفرعية **"Review"** اقرأ الملخص ثم انقر فوق **"Next >"**.
 12. في خطوة **"Deployment"** انتظر البنية الأساسية لبرنامج ربط العمليات التجارية ليتم توزيعها ثم انقر فوق **"Finish"**.
 13. في Synapse Studio، حدد صفحة "**Monitor**"، وفي علامة التبويب "**Pipeline runs**"، انتظر حتى اكتمال البنية الأساسية لبرنامج ربط العمليات التجارية "**Copy products**" بحالة "**Succeeded**" (يمكنك استخدام الزر " **&#8635; Refresh**" في صفحة "Pipeline runs" لتحديث الحالة).
-14. On the <bpt id="p1">**</bpt>Data<ept id="p1">**</ept> page, select the <bpt id="p2">**</bpt>Linked<ept id="p2">**</ept> tab and expand the <bpt id="p3">**</bpt>Azure Data Lake Storage Gen 2<ept id="p3">**</ept> hierarchy until you see the file storage for your Synapse workspace. Then select the file storage to verify that a file named <bpt id="p1">**</bpt>products.csv<ept id="p1">**</ept> has been copied to this location, as shown here:
+14. في صفحة **"Data"** حدد علامة التبويب **"Linked"** ثم قم بتوسيع التدرج الهرمي **Azure Data Lake Storage Gen 2** حتى تشاهد تخزين الملف لمساحة عمل Synapse. ثم حدد تخزين الملف للتحقق من نسخ ملف اسمه **products.csv** إلى هذا الموقع، كما هو موضح هنا:
 
     ![صورة توضح عرض Synapse Studio الموسع لتدرج Azure Data Lake Storage Gen 2 الهرمي مع تخزين الملفات لمساحة عمل Synapse](images/synapse-storage.png)
 
 ## <a name="use-a-sql-pool-to-analyze-data"></a>استخدام تجمع SQL لتحليل البيانات
 
-Now that you've ingested some data into your workspace, you can use Synapse Analytics to query and analyze it. One of the most common ways to query data is to use SQL, and in Synapse Analytics you can use a <bpt id="p1">*</bpt>SQL pool<ept id="p1">*</ept> to run SQL code.
+الآن بعد أن قمت باستيعاب بعض البيانات في مساحة العمل الخاصة بك، يمكنك استخدام Synapse Analytics للاستعلام عنها وتحليلها. واحدة من الطرق الأكثر شيوعاً للاستعلام عن البيانات هي استخدام SQL، وفي Synapse Analytics يمكنك استخدام *تجمّع SQL* لتشغيل التعليمات البرمجية لـ SQL.
 
 1. في Synapse Studio، انقر بزر الماوس الأيمن فوق ملف **"products.csv"** في تخزين الملفات لمساحة عمل Synapse، أشر إلى **البرنامج النصي SQL الجديد**وحدد **"Select TOP 100 rows"**.
 2. في جزء **SQL Script 1** الذي يفتح، راجع التعليمات البرمجية لـ SQL التي تم إنشاؤها، والتي يجب أن تكون مشابهة لهذا:
@@ -143,7 +143,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     | 772 | Mountain-100 Silver, 42 | Mountain Bikes | 3399.9900 |
     | ... | ... | ... | ... |
 
-5. Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing <bpt id="p1">*</bpt>datalakexx<ept id="p1">*</ept> and <bpt id="p2">*</bpt>fsxx<ept id="p2">*</ept> with the names of your data lake storage account and file system), and then rerun the query:
+5. لاحظ أن النتائج تتكون من أربعة أعمدة تسمى C1 وC2 وC3 وC4؛ وأن الصف الأول في النتائج يحتوي على أسماء حقول البيانات. لحل هذه المشكلة، قم بإضافة معلمات HEADER_ROW = TRUE إلى الدالة OPENROWSET كما هو موضح هنا (استبدال *datalakexx* و*fsxx* بأسماء حساب تخزين مستودع البيانات ونظام الملفات)، ثم قم بإعادة تشغيل الاستعلام:
 
     ```SQL
     SELECT
@@ -188,13 +188,13 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     | Bike Racks | 1 |
     | ... | ... |
 
-8. In the <bpt id="p1">**</bpt>Properties<ept id="p1">**</ept> pane for <bpt id="p2">**</bpt>SQL Script 1<ept id="p2">**</ept>, change the <bpt id="p3">**</bpt>Name<ept id="p3">**</ept> to <bpt id="p4">**</bpt>Count Products by Category<ept id="p4">**</ept>. Then in the toolbar, select <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> to save the script.
+8. في جزء **"Properties"** لـ **البرنامج النصي 1 SQL**، قم بتغيير **الاسم** إلى **عدد المنتجات حسب الفئة**. ثم في شريط الأدوات، حدد **"Publish"** لحفظ البرنامج النصي.
 
 9. أغلق جزء البرنامج النصي **"Count Products by Category"**.
 
 10. في استوديو Synapse، حدد الصفحة **"Develop"** ولاحظ أنه تم حفظ البرنامج النصي SQL **عدد منتجات المنشورة حسب الفئة** هناك.
 
-11. Select the <bpt id="p1">**</bpt>Count Products by Category<ept id="p1">**</ept> SQL script to reopen it. Then ensure that the script is connected to the <bpt id="p1">**</bpt>Built-in<ept id="p1">**</ept> SQL pool and run it to retrieve the product counts.
+11. حدد البرنامج النصي SQL **"Count Products by Category"** لإعادة فتحه. ثم تأكد من أن البرنامج النصي متصل بتجمّع SQL **المُضمن** وتشغيله لاسترداد عدد المنتجات.
 
 12. في جزء **"Results"** حدد طريقة عرض **"Chart"** ثم حدد الإعدادات التالية للتخطيط:
     - **نوع المخطط**: عمود
@@ -212,7 +212,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
 ## <a name="use-a-spark-pool-to-analyze-data"></a>استخدام تجمع Spark لتحليل البيانات
 
-While SQL is a common language for querying structured datasets, many data analysts find languages like Python useful to explore and prepare data for analysis. In Azure Synapse Analytics, you can run Python (and other) code in a <bpt id="p1">*</bpt>Spark pool<ept id="p1">*</ept>; which uses a distributed data processing engine based on Apache Spark.
+في حين أن SQL هي لغة شائعة للاستعلام عن مجموعات البيانات المُنظمة، يجد العديد من محللي البيانات لغات مثل Python مفيدة لاستكشاف وإعداد البيانات للتحليل. في تحليلات Azure Synapse، يمكنك تشغيل رمز Python (وغيره) في *تجمّع Spark*؛ الذي يستخدم محرك معالجة البيانات الموزعة على أساس Apache Spark.
 
 1. في استوديو Synapse، حدد صفحة **"Manage"**.
 2. حدد علامة التبويب **"Apache Spark pools"** ثم استخدم رمز **&#65291، جديد** لإنشاء تجمّع Spark جديد بالإعدادات التالية:
@@ -222,7 +222,7 @@ While SQL is a common language for querying structured datasets, many data analy
     - **تحجيم تلقائي**: ُممكّن
     - **عدد العقد** 3----3
 3. مراجعة وإنشاء تجمّع Spark ثم انتظر حتى عملية التوزيع (التي قد تستغرق بضع دقائق).
-4. When the Spark pool has been deployed, in Synapse Studio, on the <bpt id="p1">**</bpt>Data<ept id="p1">**</ept> page, browse to the file system for your Synapse workspace. Then right-click <bpt id="p1">**</bpt>products.csv<ept id="p1">**</ept>, point to <bpt id="p2">**</bpt>New notebook<ept id="p2">**</ept>, and select <bpt id="p3">**</bpt>Load to DataFrame<ept id="p3">**</ept>.
+4. عند توزيع تجمّع Spark في Synapse Studio على صفحة **"Data"** استعرض للوصول إلى نظام الملفات لمساحة عمل Synapse. ثم انقر بزر الماوس الأيمن فوق **"products.csv"**، أشر إلى **"New notebook"**، وحدد **"Load to DataFrame"**.
 5. في جزء **"Notebook 1"** الذي يفتح، في القائمة **"Attach to"** حدد تجمع **"spark"** المُنشأ مسبقاً وتأكد من تعيين **اللغة** إلى **PySpark (Python)**.
 6. راجع التعليمات البرمجية في الخلية الأولى (والوحيدة) في دفتر الملاحظات، والتي يجب أن تبدو كما يلي:
 
@@ -235,7 +235,7 @@ While SQL is a common language for querying structured datasets, many data analy
     display(df.limit(10))
     ```
 
-7.                  **تلميح**: تأكد من أنك تعمل في الدليل الذي يحتوي على اشتراكك - المُشار إليه في أعلى اليمين أسفل معرّف مستخدمك.
+7.  حدد " **&#9655; Run**" الموجود يسار الخلية البرمجية لتشغيله، وانتظر النتائج. في المرة الأولى التي تقوم فيها بتشغيل خلية في دفتر ملاحظات، يتم بدء تشغيل تجمّع Spark - لذلك قد يستغرق الأمر دقيقة أو نحو ذلك لإرجاع أي نتائج.
 
     > **ملاحظة**: في حالة حدوث خطأ بسبب عدم توفر Python Kernel بعد، أعد تشغيل الخلية.
 
@@ -285,7 +285,7 @@ While SQL is a common language for querying structured datasets, many data analy
     | عجلات | 14 |
     | ... | ... |
 
-14. إذا لم تكن كذلك، حدد رمز المستخدم وبدّل الدليل.
+14. في إخراج النتائج للخلية، حدد طريقة عرض **المخطط**. يجب أن يشبه المخطط الناتج هذا:
 
     ![صورة تعرض عرض المخطط البياني لعدد الفئات](images/bar-chart.png)
 

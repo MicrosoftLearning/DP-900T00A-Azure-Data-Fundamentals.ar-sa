@@ -20,7 +20,7 @@ lab:
 
 1. افتح مدخل Microsoft Azure على [https://portal.azure/com](https://portal.azure.com?azure-portal=true)، وقم بتسجيل الدخول باستخدام حساب Microsoft المقترن باشتراك Azure.
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
+    >                 **ملاحظة**: تأكد من أنك تعمل في الدليل الذي يحتوي على اشتراكك - المُشار إليه في أعلى اليمين أسفل معرّف المستخدم. إذا لم تكن كذلك، حدد رمز المستخدم وبدّل الدليل.
 
 1. في مدخل Microsoft Azure، في صفحة **"Home"**، استخدم **&#65291; إنشاء رمز مورد** لإنشاء مورد جديد.
 1. ابحث عن *Azure Synapse Analytics*، وإنشاء مورد **Azure Synapse Analytics** جديد باستخدام الإعدادات التالية:
@@ -33,7 +33,7 @@ lab:
         - **اسم الحساب**: *إنشاء حساب جديد باسم فريد، على سبيل المثال "<your_name> datalake"*.
         - **اسم نظام الملفات**: *إنشاء نظام ملفات جديد باسم فريد، على سبيل المثال "fs<your_name>"*.
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: A Synapse Analytics workspace requires two resource groups in your Azure subscription; one for resources you explicitly create, and another for managed resources used by the service. It also requires a Data Lake storage account in which to store data, scripts, and other artifacts.
+    >                 **ملاحظة**: تتطلب مساحة عمل Synapse Analytics مجموعتين من الموارد في اشتراك Azure، مجموعة للموارد التي تُنشئها صراحةً وأخرى للموارد المُدارة التي تستخدمها الخدمة. كما يتطلب حساب تخزين مستودع بيانات لتخزين البيانات والبرامج النصية والبيانات الاصطناعية الأخرى.
 
 1. عند إدخال هذه التفاصيل، حدد **"Review + create"**، ثم حدد **"Create"** لإنشاء مساحة العمل.
 1. انتظر حتى يتم إنشاء مساحة العمل - قد يستغرق ذلك خمس دقائق أو نحو ذلك.
@@ -72,7 +72,7 @@ lab:
     - **Data format**: CSV
     - **Ignore the first record**:  تحديد
     - **Mapping**: devices_mapping
-1. Ensure the column data types have been correctly identified as <bpt id="p1">*</bpt>Time (datetime)<ept id="p1">*</ept>, <bpt id="p2">*</bpt>Device (string)<ept id="p2">*</ept>, and <bpt id="p3">*</bpt>Value (long)<ept id="p3">*</ept>). Then select <bpt id="p1">**</bpt>Next: Start Ingestion<ept id="p1">**</ept>.
+1. تأكد من تحديد أنواع بيانات الأعمدة بشكل صحيح على لتكون *Time (datetime)*، و*Device (string)*، و*Value (long)*). ثم حدد **Next: Start Ingestion**.
 1. عند اكتمال الاستيعاب، حدد **Close**.
 1. في Azure Data Explorer، ضمن علامة التبويب **Query**، تأكد من تحديد قاعدة بيانات **iot-data**، ثم أدخل الاستعلام التالي في جزء الاستعلام.
 
@@ -84,19 +84,19 @@ lab:
 
     | الوقت | جهاز | القيمة |
     | --- | --- | --- |
-    | 2022-01-01T00:00:00Z | Dev1 | 7 |
+    | 2022-01-01T00:00:00Z | Dev1 | -7 |
     | 2022-01-01T00:00:01Z | Dev2 | 4 |
     | ... | ... | ... |
 
     في حالة تطابق النتائج مع هذا، تكون قد نجحت في إنشاء جدول **devices** من البيانات الموجودة في الملف.
 
-    > <bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: In this example, you imported a very small amount of batch data from a file, which is fine for the purposes of this exercise. In reality, you can use Data Explorer to analyze much larger volumes of data; and since you enabled stream ingestion, you could also have configured Data Explorer to ingest data into the table from a streaming source such as Azure Event Hubs.
+    >                 **تلميح**: استوردت في هذا المثال مقدار ضئيل للغاية من البيانات الدُفعية من ملف، ولا بأس بذلك لأغراض هذا التمرين. في الواقع، يمكنك استخدام Data Explorer لتحليل كميات أكبر بكثير من البيانات، وبما أنك قمت بتمكين استيعاب البث، يمكنك أيضاً تكوين Data Explorer لاستيعاب البيانات في الجدول من مصدر دفق مثل مراكز الأحداث.
 
 ## <a name="use-kusto-query-language-to-query-the-table-in-synapse-studio"></a>استخدام لغة الاستعلام Kusto للاستعلام عن الجدول في Synapse Studio
 
 1. أغلق علامة تبويب مستعرض Azure Data Explorer وارجع إلى علامة التبويب التي تحتوي على Synapse Studio.
-1. On the <bpt id="p1">**</bpt>Data<ept id="p1">**</ept> page, expand the <bpt id="p2">**</bpt>iot-data<ept id="p2">**</ept> database and its <bpt id="p3">**</bpt>Tables<ept id="p3">**</ept> folder. Then in the <bpt id="p1">**</bpt>...<ept id="p1">**</ept> menu for the <bpt id="p2">**</bpt>devices<ept id="p2">**</ept> table, select <bpt id="p3">**</bpt>New KQL Script<ept id="p3">**</ept><ph id="ph1"> &gt; </ph><bpt id="p4">**</bpt>Take 1000 rows<ept id="p4">**</ept>.
-1. Review the generated query and its results. The query should contain the following code:
+1. في الصفحة **Data**، قم بتوسيع قاعدة بيانات **iot-data** ومجلد **Tables** الخاص بها. ثم في القائمة **...** للجدول **devices**، حدد **New KQL Script** > **Take 1000 rows**.
+1. راجع الاستعلام الذي تم إنشاؤه ونتائجه. يجب أن يحتوي الاستعلام على التعليمات البرمجية التالية:
 
     ```kusto
     devices
@@ -112,7 +112,7 @@ lab:
     | where Device == 'Dev1'
     ```
 
-1. Select <bpt id="p1">**</bpt>&amp;#9655; Run<ept id="p1">**</ept> to run the query. Then review the results, which should contain only the rows for the <bpt id="p1">*</bpt>Dev1<ept id="p1">*</ept> device.
+1. حدد " **&#9655; Run**" لتشغيل الاستعلام. ثم راجع النتائج، التي يجب أن تحتوي فقط على صفوف الجهاز *Dev1*.
 
 1. تغيير الاستعلام كما يلي:
 

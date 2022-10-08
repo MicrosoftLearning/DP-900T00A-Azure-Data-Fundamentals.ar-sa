@@ -16,7 +16,7 @@ lab:
 
 ## <a name="provision-an-azure-sql-database-resource"></a>توفير مورد Azure SQL Database
 
-1. In the <bpt id="p1">[</bpt>Azure portal<ept id="p1">](https://portal.azure.com?azure-portal=true)</ept>, select <bpt id="p2">**</bpt>&amp;#65291; Create a resource<ept id="p2">**</ept> from the upper left-hand corner and search for <bpt id="p3">*</bpt>Azure SQL<ept id="p3">*</ept>. Then in the resulting <bpt id="p1">**</bpt>Azure SQL<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Create<ept id="p2">**</ept>.
+1. في [مدخل Microsoft Azure](https://portal.azure.com?azure-portal=true)، حدد " **&#65291; Create a resource**" من الزاوية اليسرى العليا وابحث عن *Azure SQL*. ثم في صفحة **Azure SQL** الناتجة، حدد «**Create**».
 
 1. راجع خيارات Azure SQL المتوفرة، ثم في إطار «**SQL databases**»، تأكد من تحديد «**Single database**»، وحدد «**Create**».
 
@@ -26,12 +26,12 @@ lab:
     - **الاشتراك**: حدد اشتراك Azure الخاص بك.
     - **Resource group**: أنشئ مجموعة موارد جديدة وامنحها اسماً تختاره.
     - **اسم قاعدة البيانات**: *AdventureWorks*
-    - <bpt id="p1">**</bpt>Server<ept id="p1">**</ept>:  Select <bpt id="p2">**</bpt>Create new<ept id="p2">**</ept> and create a new server with a unique name in any available location. Use <bpt id="p1">**</bpt>SQL authentication<ept id="p1">**</ept> and specify your name as the server admin login and a suitably complex password (remember the password - you'll need it later!)
+    -                 **Server**: حدد «**Create new**» وأنشئ خادماً جديداً باسم فريد في أي موقع متوفر. استخدم **مصادقة SQL** وحدد اسمك على أنه تسجيل دخول مسؤول الخادم وحدد كلمة مرور معقدة بشكل مناسب (تذكر كلمة المرور - ستحتاج إليها لاحقًا!)
     - **هل تريد استخدام تجمع مرن من SQL؟**: *No*
     - **Compute + storage**: اتركه دون تغيير
     - **تكرار تخزين النسخ الاحتياطي**: *Locally-redundant backup storage*
 
-1. On the <bpt id="p1">**</bpt>Create SQL Database<ept id="p1">**</ept> page, select <bpt id="p2">**</bpt>Next :Networking &gt;<ept id="p2">**</ept>, and on the <bpt id="p3">**</bpt>Networking<ept id="p3">**</ept> page, in the <bpt id="p4">**</bpt>Network connectivity<ept id="p4">**</ept> section, select <bpt id="p5">**</bpt>Public endpoint<ept id="p5">**</ept>. Then select <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> for both options in the <bpt id="p2">**</bpt>Firewall rules<ept id="p2">**</ept> section to allow access to your database server from Azure services and your current client IP address.
+1. في صفحة "**Create SQL Database**"، حدد "**Next :Networking >** "، وفي صفحة "**Networking**" في القسم "**Network connectivity**"، حدد "**Public endpoint**". ثم حدد «**Yes**» لكلا الخيارين في قسم **Firewall rules** للسماح بالوصول إلى خادم قاعدة البيانات من خدمات Azure وعنوان IP للعميل الحالي.
 
 1. حدد "**Next: Security >** " وعيّن الخيار "**Enable Microsoft Defender for SQL**" إلى "**Not now**".
 
@@ -39,7 +39,7 @@ lab:
 
 1. حدد "**Review + Create**"، ثم حدد "**Create**" لإنشاء قاعدة بيانات Azure SQL.
 
-1. Wait for deployment to complete. Then go to the resource that was deployed, which should look like this:
+1. يُرجى الانتظار لاكتمال التوزيع. ثم انتقل إلى المورد الذي تم توزيعه، والذي يجب أن يبدو كما يلي:
 
     ![لقطة شاشة لمدخل Microsoft Azure تعرض صفحة "SQL Database".](images//sql-database-portal.png)
 

@@ -19,11 +19,11 @@ lab:
 إذا لم يكن Microsoft Power BI Desktop مثبتاً بالفعل على جهاز الكمبيوتر الذي يعمل بنظام Windows، يمكنك تنزيله وتثبيته مجاناً.
 
 1. تنزيل مثبّت Power BI Desktop من [https://aka.ms/power-bi-desktop](https://aka.ms/power-bi-desktop?azure-portal=true).
-1. When the file has downloaded, open it, and use the setup wizard to install Power BI Desktop on your computer. This insatllation may take a few minutes.
+1. عند تنزيل الملف، افتحه واستخدم معالج الإعداد لتثبيت Power BI Desktop على جهاز الكمبيوتر. قد يستغرق التثبيت بضع دقائق.
 
 ## <a name="import-data"></a>استيراد البيانات
 
-1. Open Power BI Desktop. The application interface should look similar to this:
+1. افتح Power BI Desktop. يجب أن تبدو واجهة التطبيق مشابهة لما يلي:
 
     ![لقطة شاشة تعرض شاشة بدء Power BI Desktop.](images/power-bi-start.png)
 
@@ -41,7 +41,7 @@ lab:
 
 1. في مربع الحوار "Access Web content"، حدد "**Connect**".
 
-1. Verify that the URL opens a dataset containing customer data, as shown below. Then select <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> to load the data into the data model for your report.
+1. تحقق من أن عنوان URL يفتح مجموعة بيانات تحتوي على بيانات العميل، كما هو موضح أدناه. ثم حدد **Load** لتحميل البيانات في نموذج البيانات للتقرير الخاص بك.
 
     ![لقطة شاشة تعرض مجموعة بيانات لبيانات العملاء المعروضة في Power BI.](images/customers.png)
 
@@ -67,7 +67,7 @@ lab:
 
 تم تحميل جداول البيانات الثلاثة التي قمت باستيرادها في نموذج بيانات، والذي ستقوم الآن باستكشافه وتحسينه.
 
-1. In Power BI Desktop, on the left-side edge, select the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> tab, and then arrange the tables in the model so you can see them. You can hide the panes on the right side by using the <bpt id="p1">**</bpt><ph id="ph1">&gt;&gt;</ph><ept id="p1">**</ept> icons:
+1. في Power BI Desktop، في الجزء الأيسر، حدد علامة التبويب "**Model**"، ثم رتب الجداول في النموذج بحيث يمكنك رؤيتها. يمكنك إخفاء الأجزاء على الجانب الأيمن باستخدام الرمز **>>** :
 
     ![لقطة شاشة تعرض علامة التبويب "Model" في Power BI.](images/model-tab.png)
 
@@ -77,12 +77,12 @@ lab:
 
     ستضمن هذه الخطوة عرض قيم الإيرادات كعملة في تصورات التقرير.
 
-1. In the products table, right-click the <bpt id="p1">**</bpt>Category<ept id="p1">**</ept> field (or open its <bpt id="p2">**</bpt><ph id="ph1">&amp;vellip;</ph><ept id="p2">**</ept> menu) and select <bpt id="p3">**</bpt>Create hierarchy<ept id="p3">**</ept>. This step creates a hierarchy named <bpt id="p1">**</bpt>Category Hierarchy<ept id="p1">**</ept>. You may need to expand or scroll in the <bpt id="p1">**</bpt>products<ept id="p1">**</ept> table to see this - you can also see it in the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane:
+1. في جدول "products"، انقر بزر الماوس الأيمن فوق حقل "**Category**" (أو افتح القائمة **&vellip;** ) وحدد "**Create hierarchy**". تُنشئ هذه الخطوة تسلسلاً هرمياً يسمى "**Category Hierarchy**". قد تحتاج إلى توسيع جدول "**products**" أو التمرير لأسفل لمشاهدة ذلك - يمكنك أيضاً رؤيته في جزء "**Fields**":
 
     ![لقطة شاشة توضح كيفية إضافة "Category Hierarchy" في Power BI.](images/category-hierarchy.png)
 
-1. In the products table, right-click the <bpt id="p1">**</bpt>ProductName<ept id="p1">**</ept> field (or open its <bpt id="p2">**</bpt><ph id="ph1">&amp;vellip;</ph><ept id="p2">**</ept> menu) and select <bpt id="p3">**</bpt>Add to hierarchy<ept id="p3">**</ept><ph id="ph2"> &gt; </ph><bpt id="p4">**</bpt>Category Hierarchy<ept id="p4">**</ept>. This adds the <bpt id="p1">**</bpt>ProductName<ept id="p1">**</ept> field to the hierarchy you created previously.
-1. In the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, right-click <bpt id="p2">**</bpt>Category Hierarchy<ept id="p2">**</ept> (or open its <bpt id="p3">**</bpt>...<ept id="p3">**</ept> menu) and select <bpt id="p4">**</bpt>Rename<ept id="p4">**</ept>. Then rename the hierarchy to <bpt id="p1">**</bpt>Categorized Product<ept id="p1">**</ept>.
+1. في جدول "products"، انقر بزر الماوس الأيمن فوق الحقل "**ProductName**" (أو افتح القائمة **&vellip;** ) وحدد "**Add to hierarchy** > **Category Hierarchy**". يؤدي هذا إلى إضافة حقل **ProductName** إلى التسلسل الهرمي الذي قمت بإنشائه مسبقاً.
+1. في جزء **Fields**، انقر بزر الماوس الأيمن فوق **Category Hierarchy** (أو افتح القائمة **...**) وحدد **Rename**. ثم أعد تسمية التسلسل الهرمي إلى **Categorized Product**.
 
     ![لقطة شاشة توضح كيفية إعادة تسمية التسلسل الهرمي في Power BI.](images/rename-hierarchy.png)
 
@@ -95,9 +95,9 @@ lab:
 
 ## <a name="create-a-report"></a>إنشاء تقرير
 
-Now you're almost ready to create a report. First you need to check some settings to ensure all visualizations are enabled.
+أنت الآن جاهز تقريباً لإنشاء تقرير. عليك أولاً التحقق من بعض الإعدادات للتأكد من تمكين جميع التصورات.
 
-1. On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, select <bpt id="p2">**</bpt>Options and Settings<ept id="p2">**</ept>. Then select <bpt id="p1">**</bpt>Options<ept id="p1">**</ept>, and in the <bpt id="p2">**</bpt>Security<ept id="p2">**</ept> section, ensure that <bpt id="p3">**</bpt>Use Map and Filled Map visuals<ept id="p3">**</ept> is enabled and select <bpt id="p4">**</bpt>OK<ept id="p4">**</ept>.
+1. في القائمة **File**، حدد **Options and Settings**. ثم حدد **Options**، وفي قسم **Security**، تأكد من تمكين ** استخدام تصورات المخطط والمخطط المعبأ ** وحدد **OK**.
 
     ![لقطة شاشة توضح كيفية تعيين خاصية "Use Map and Filled Map visuals" في PowerBI.](images/set-options.png)
 
@@ -107,42 +107,42 @@ Now you're almost ready to create a report. First you need to check some setting
 
     ![لقطة شاشة تعرض علامة التبويب "report" في Power BI.](images/report-tab.png)
 
-1. In the ribbon, above the report design surface, select <bpt id="p1">**</bpt>Text Box<ept id="p1">**</ept> and add a text box containing the text <bpt id="p2">**</bpt>Sales Report<ept id="p2">**</ept> to the report. Format the text to make it bold with a font size of 32.
+1. في الشريط، أعلى سطح تصميم التقرير، حدد **Text Box** وأضف مربع نص يحتوي على النص **Sales Report** إلى التقرير. قم بتنسيق النص لجعله غامقاً بحجم خط 32.
 
     ![لقطة شاشة توضح كيفية إضافة مربع نص في Power BI.](images/text-box.png)
 
-1. عند تنزيل الملف، افتحه واستخدم معالج الإعداد لتثبيت Power BI Desktop على جهاز الكمبيوتر.
+1. حدد أي منطقة فارغة في التقرير لإلغاء تحديد مربع النص. ثم في جزء **Fields**، وسّع **Products** وحدد الحقل **Categorized Products**. تضيف هذه الخطوة جدولاً إلى التقرير.
 
     ![لقطة شاشة توضح كيفية إضافة جدول "categorized products" إلى تقرير في Power BI.](images/categorized-products-table.png)
 
-1. قد يستغرق التثبيت بضع دقائق.
+1. مع استمرار تحديد الجدول، في جزء **Fields**، وسّع **Orders** وحدد **Revenue**. يُضاف عمود "Revenue" إلى الجدول. قد تحتاج إلى توسيع حجم الجدول لرؤيته.
 
-    The revenue is formatted as currency, as you specified in the model. However, you didn't specify the number of decimal places, so the values include fractional amounts. It won't matter for the visualizations you're going to create, but you could go back to the <bpt id="p1">**</bpt>Model<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> tab and change the decimal places if you wish.
+    الإيرادات منسقة كعملة، كما حددت في النموذج. ومع ذلك، فإنك لم تحدد عدد المنازل العشرية، لذا فإن القيم تتضمن مقادير كسرية. لا يهم التصورات التي ستنشئها، حيث يمكنك الرجوع إلى علامة التبويب "**Model**" أو "**Data**" وتغيير المنازل العشرية إن أردت.
 
     ![لقطة شاشة تعرض جدول "categorized products" مع عمود "Revenue" في التقرير.](images/revenue-column.png)
 
-1. With the table still selected, in the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, select the <bpt id="p2">**</bpt>Stacked column chart<ept id="p2">**</ept> visualization. The table is changed to a column chart showing revenue by category.
+1. مع استمرار تحديد الجدول، في جزء **Visualizations**، حدد التصور **المخطط البياني العمودي المكدس**. تم تغيير الجدول إلى مخطط عمودي يعرض الإيرادات حسب الفئة.
 
     ![لقطة شاشة تعرض مخطط أعمدة مرصوفة لجدول "categorized products" مع عمود "Revenue" في التقرير.](images/stacked-column-chart.png)
 
-1. افتح Power BI Desktop.
+1. فوق المخطط البياني العمودي المحدد، حدد الرمز **&#8595;** لتشغيل التنقل لأسفل. ثم في المخطط البياني، حدد العمود الثاني (*Road Bikes*) للتنقل ومعرفة إيرادات المنتجات الفردية في هذه الفئة. هذه الإمكانية ممكنة لأنك حددت تسلسلاً هرمياً للفئات والمنتجات.
 
     ![لقطة شاشة تعرض مخطط بياني عمودي يمكن التنقل لأسفل به لرؤية المنتجات داخل الفئة.](images/drill-down.png)
 
-1. يجب أن تبدو واجهة التطبيق مشابهة لما يلي:
-1. Select a blank area of the report, and then in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select the <bpt id="p2">**</bpt>Quantity<ept id="p2">**</ept> field in the <bpt id="p3">**</bpt>orders<ept id="p3">**</ept> table and the <bpt id="p4">**</bpt>Category<ept id="p4">**</ept> field in the <bpt id="p5">**</bpt>products<ept id="p5">**</ept> table. This step results in another column chart showing sales quantity by product category.
+1. استخدم الرمز **&#x2191;** للعودة إلى مستوى الفئة. ثم حدد الرمز **(** &#8595; **)** لإيقاف تشغيل ميزة التنقل لأسفل.
+1. حدد منطقة فارغة من التقرير، ثم في جزء **Fields**، حدد حقل **Quantity** في جدول **orders** و**Category** في جدول **products**. ينتج عن هذه الخطوة مخطط بياني عمودي آخر يوضح حجم المبيعات حسب فئة المنتج.
 1. مع تحديد مخطط العمود الجديد، في جزء **Visualizations**، حدد **Pie chart** ثم غيّر حجم المخطط البياني وضعه بجوار المخطط البياني لعمود الإيرادات حسب الفئة.
 
     ![لقطة شاشة تعرض مخططاً دائرياً يعرض حجم المبيعات حسب الفئة.](images/category-pie-chart.png)
 
-1. Select a blank area of the report, and then in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select the <bpt id="p2">**</bpt>City<ept id="p2">**</ept> field in the <bpt id="p3">**</bpt>customers<ept id="p3">**</ept> table and then select the <bpt id="p4">**</bpt>Revenue<ept id="p4">**</ept> field in the <bpt id="p5">**</bpt>orders<ept id="p5">**</ept> table. This results in a map showing sales revenue by city. Rearrange and resize the visualizations as needed:
+1. حدد منطقة فارغة من التقرير، ثم في جزء **Fields**، حدد حقل **City** في جدول **customers** ثم حدد **Revenue** في جدول **الأوامر**. ما ينتج عنه خريطة توضح إيرادات المبيعات حسب المدينة. أعد ترتيب المرئيات وغيّر حجمها حسب الحاجة:
 
     ![لقطة شاشة تعرض خريطة توضح الإيرادات حسب المدينة.](images/revenue-map.png)
 
-1. In the map, note that you can drag, double-click, use a mouse-wheel, or pinch and drag on a touch screen to interact. Then select a specific city, and note that the other visualizations in the report are modified to highlight the data for the selected city.
+1. في المخطط، لاحظ أنه يمكنك السحب أو النقر المزدوج أو استخدام عجلة الماوس أو الضغط والسحب على شاشة اللمس للتفاعل. ثم حدد مدينة معينة، ولاحظ أنه تم تعديل التصورات الأخرى في التقرير لتمييز البيانات الخاصة بالمدينة المحددة.
 
     ![لقطة شاشة تعرض خريطة توضح الإيرادات حسب المدينة مع تمييز بيانات المدينة المحددة.](images/selected-data.png)
 
-1. On the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, select <bpt id="p2">**</bpt>Save<ept id="p2">**</ept>. Then save the file with an appropriate .pbix file name. You can open the file and explore data modeling and visualization further at your leisure.
+1. في القائمة ⁧**⁩File⁧**⁩، حدد ⁧**⁩Save⁧**⁩. ثم احفظ الملف باسم ملف .pbix مناسب. يمكنك فتح الملف واستكشاف نمذجة البيانات والتصور بشكل أكبر في وقت فراغك.
 
 إذا كان لديك اشتراك في [خدمة Power BI](https://www.powerbi.com/?azure-portal=true)، يمكنك تسجيل الدخول إلى حسابك ونشر التقرير إلى مساحة عمل Power BI. 
