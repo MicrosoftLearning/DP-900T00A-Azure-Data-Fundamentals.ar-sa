@@ -18,7 +18,7 @@ lab:
 
 1. سجل الدخول إلى اشتراكك في Azure في [مدخل Microsoft Azure](https://portal.azure.com) باستخدام بيانات اعتماد اشتراك Azure.
 
-1. Use the <bpt id="p1">**</bpt>[<ph id="ph1">\&gt;</ph>_]<ept id="p1">**</ept> button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a <bpt id="p2">***</bpt>Bash<ept id="p2">***</ept> environment and creating storage if prompted. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
+1. استخدم الزر **[\>_]** الموجود على يسار شريط البحث في أعلى الصفحة لإنشاء Cloud Shell جديد في مدخل Microsoft Azure، وتحديد بيئة ***Bash*** وإنشاء مساحة تخزين إذا طلب منك ذلك. يوفر shell السحابي واجهة سطر أوامر في جزء أسفل مدخل Microsoft Azure، كما هو موضح هنا:
 
     ![مدخل Microsoft Azure مع جزء shell سحابي](./images/cloud-shell.png)
 
@@ -50,7 +50,7 @@ lab:
 
 ## <a name="explore-the-azure-resources"></a>استكشاف موارد Azure
 
-1. In the <bpt id="p1">[</bpt>Azure portal<ept id="p1">](https://portal.azure.com?azure-portal=true)</ept>, on the home page, select <bpt id="p2">**</bpt>Resource groups<ept id="p2">**</ept> to see the resource groups in your subscription. This should include the <bpt id="p1">**</bpt>learn*xxxxxxxxxxxxxxxxx...<ept id="p1">**</ept>* resource group identified by the setup script.
+1. في [مدخل Microsoft Azure](https://portal.azure.com?azure-portal=true)، في الصفحة الرئيسية، حدد **"Resource groups"** لعرض مجموعات الموارد في اشتراكك. ينبغي أن يشمل مجموعة موارد**learn*xxxxxxxxxxxxxxxxx...** * التي عرّفها برنامج الإعداد النصي.
 2. حدد مجموعة الموارد "**learn*xxxxxxxxxxxxxxxxx...** *"، وراجع الموارد التي تحتوي عليها، والتي ينبغي أن تشمل:
     - *مركز IoT* يسمى **iothub*xxxxxxxxxxxxx***، والذي يستخدم لتلقي بيانات الجهاز الواردة.
     - *حساب تخزين* يسمى **store*xxxxxxxxxxxx***، الذي ستتم كتابة نتائج معالجة البيانات إليه.
@@ -61,7 +61,7 @@ lab:
     > **ملاحظة**: إذا كنت تستخدم بيئة الاختبار المعزولة للتعلم، فقد تحتوي مجموعة الموارد أيضاً على *حساب تخزين* ثانٍ باسم **cloudshell*xxxxxxxx***، والذي يُستخدم لتخزين البيانات لـ Azure Cloud Shell الذي استخدمته لتشغيل البرنامج النصي للإعداد.
 
 3. حدد وظيفة **stream*xxxxxxxxxxxxx*** Stream Analytics، واعرض المعلومات على صفحة **النظرة العامة** الخاصة به، مع ملاحظة التفاصيل التالية:
-    - The job has one <bpt id="p1">*</bpt>input<ept id="p1">*</ept> named <bpt id="p2">**</bpt>iotinput<ept id="p2">**</ept>, and one <bpt id="p3">*</bpt>output<ept id="p3">*</ept> named <bpt id="p4">**</bpt>bloboutput<ept id="p4">**</ept>. These reference the IoT Hub and Storage account created by the setup script.
+    - تحتوي الوظيفة على *إدخال* واحد يسمى **iotinput**، و*مخرج* واحد يسمى **bloboutput**. وتشير هذه إلى IoT Hub وحساب Storage الذي تم إنشاؤه بواسطة برنامج الإعداد النصي.
     - تحتوي الوظيفة على *استعلام*، يقرأ البيانات من إدخال **iotinput**، ويجمعها عن طريق حساب عدد الرسائل التي تتم معالجتها كل 10 ثوانٍ؛ وكتابة النتائج إلى إخراج **bloboutput**.
 
 ## <a name="use-the-resources-to-analyze-streaming-data"></a>استخدام الموارد لتحليل بيانات الدفق
