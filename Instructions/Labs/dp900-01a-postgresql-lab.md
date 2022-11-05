@@ -20,7 +20,7 @@ lab:
 
 1. في مدخل Microsoft Azure، حدد « **&#65291; Create a resource**» من الزاوية اليسرى العليا وابحث عن *Azure Database for PostgreSQL*. ثم في صفحة **Azure Database for PostgreSQL**، حدد «**Create**».
 
-1. راجع خيارات Azure Database for PostgreSQL المتوفرة، ثم من إطار «**Single server**»، حدد «**Create**».
+1. راجع قاعدة بيانات Azure لخيارات PostgreSQL المتوفرة، ثم في لوحة **Azure Database for PostgreSQL**، حدد **Flexible server (Recommended)** ، ثم **Create**.
 
     ![لقطة شاشة لخيارات توزيع Azure Database for PostgreSQL](images/postgresql-options.png)
 
