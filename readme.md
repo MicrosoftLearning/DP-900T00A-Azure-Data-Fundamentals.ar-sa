@@ -1,8 +1,8 @@
-# <a name="microsoft-azure-data-fundamentals"></a>أساسيات بيانات Microsoft Azure
+# أساسيات بيانات Microsoft Azure
 
 يحتوي هذا المستودع على تمارين معملية عملية لدورة Microsoft التدريبية [DP-900 *أساسيات بيانات Microsoft Azure*](https://docs.microsoft.com/en-us/learn/certifications/courses/dp-900t00) و[الوحدات النمطية الذاتية في Microsoft Learn](https://docs.microsoft.com/en-us/users/23110622/collections/0kjyh8rn5gdrjj/). صُممت الأنشطة المعملية لمرافقة المواد التعليمية وتمكينك من التدرب على استخدام التقنيات التي يصفونها. 
 
-## <a name="what-are-we-doing"></a>ماذا نفعل؟
+## ماذا نفعل؟
 
 - لدعم هذه الدورة التدريبية، سنحتاج إلى إجراء تحديثات متكررة لمحتوى الدورة التدريبية لإبقائه مواكبًا لخدمات Azure المستخدمة في الدورة التدريبية.  نحن ننشر إرشادات الأنشطة المعملية وملفات هذه الأنشطة على GitHub للسماح بالمساهمات المفتوحة بين مؤلفي الدورة التدريبية وMCT للحفاظ على المحتوى محدثًا بالتغييرات في منصة Azure.
 

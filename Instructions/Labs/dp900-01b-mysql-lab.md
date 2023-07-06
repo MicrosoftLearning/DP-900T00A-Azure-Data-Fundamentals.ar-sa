@@ -4,17 +4,17 @@ lab:
   module: Explore relational data in Azure
 ---
 
-# <a name="explore-azure-database-for-mysql"></a>استكشاف Azure Database for MySQL
+# استكشاف Azure Database for MySQL
 
 ستُوفّر في هذا التمرين مورد Azure Database for MySQL في اشتراك Azure.
 
 سيستغرق إكمال هذا التمرين المعملي **5** دقائق.
 
-## <a name="before-you-start"></a>قبل البدء
+## قبل البدء
 
 ستحتاج إلى [اشتراك Azure](https://azure.microsoft.com/free) حيث تمتلك وصول على المستوى الإداري.
 
-## <a name="provision-an-azure-database-for-mysql-resource"></a>توفير مورد Azure Database for MySQL
+## توفير مورد Azure Database for MySQL
 
 ستقوم في هذا التمرين بتوفير مورد Azure Database for MySQL.
 
