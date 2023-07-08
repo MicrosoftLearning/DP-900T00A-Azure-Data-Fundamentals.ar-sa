@@ -4,17 +4,17 @@ lab:
   module: Explore fundamentals of real-time analytics
 ---
 
-# <a name="explore-spark-streaming-in-azure-synapse-analytics"></a>استكشاف Spark Streaming في Azure Synapse Analytics
+# استكشاف Spark Streaming في Azure Synapse Analytics
 
 في هذا التمرين، ستستخدم *Spark Structured Streaming* و*جداول دلتا* في Azure Synapse Analytics لمعالجة بيانات الدفق.
 
 سيستغرق إكمال هذا التمرين المعملي **15** دقيقة.
 
-## <a name="before-you-start"></a>قبل البدء
+## قبل البدء
 
 ستحتاج إلى [اشتراك Azure](https://azure.microsoft.com/free) حيث تمتلك وصول على المستوى الإداري.
 
-## <a name="provision-a-synapse-analytics-workspace"></a>توفير مساحة عمل Synapse Analytics
+## توفير مساحة عمل Synapse Analytics
 
 لاستخدام Synapse Analytics، يجب توفير مورد مساحة عمل Synapse Analytics في اشتراك Azure.
 
@@ -43,7 +43,7 @@ lab:
 
     ![Synapse Studio](images/synapse-studio.png)
 
-## <a name="create-a-spark-pool"></a>إنشاء تجمع Spark
+## إنشاء تجمع Spark
 
 لاستخدام Spark لمعالجة بيانات الدفق، تحتاج إلى إضافة تجمع Spark إلى مساحة عمل Azure Synapse.
 
@@ -56,7 +56,7 @@ lab:
     - **عدد العقد** 3----3
 3. راجع وأنشئ تجمع Spark ثم انتظر حتى يتم نشره (الأمر الذي قد يستغرق بضع دقائق).
 
-## <a name="explore-stream-processing"></a>استكشاف معالجة الدفق
+## استكشاف معالجة الدفق
 
 لاستكشاف معالجة الدفق باستخدام Spark، ستستخدم دفتر ملاحظات يحتوي على تعليمات برمجية وملاحظات Python لمساعدتك في تنفيذ بعض معالجات الدفق الأساسية باستخدام جداول دلتا وSpark Structured Streaming.
 
@@ -65,7 +65,7 @@ lab:
 3. في القائمة **&#65291;**، حدد **&#8612; Import**، وحدد ملف **Structured Streaming and Delta Tables.ipynb** على الكمبيوتر المحلي.
 4. اتبع الإرشادات الموجودة في دفتر الملاحظات لإرفاقها بتجمع Spark وتشغيل خلايا التعليمات البرمجية التي تحتوي عليها لاستكشاف طرق مختلفة لاستخدام Spark لمعالجة الدفق.
 
-## <a name="delete-azure-resources"></a>حذف موارد Azure
+## حذف موارد Azure
 
 >                 **ملاحظة**: يمكنك تخطي هذا القسم إذا كنت تنوي إكمال تمارين أخرى تستخدم Azure Synapse Analytics. وإلا، اتبع الخطوات أدناه لتجنب تكاليف Azure غير الضرورية.
 

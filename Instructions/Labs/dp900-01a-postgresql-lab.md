@@ -4,17 +4,17 @@ lab:
   module: Explore relational data in Azure
 ---
 
-# <a name="explore-azure-database-for-postgresql"></a>استكشاف Azure Database for PostgreSQL
+# استكشاف Azure Database for PostgreSQL
 
 ستُوفّر في هذا التمرين مورد Azure Database for PostgreSQL في اشتراك Azure.
 
 سيستغرق إكمال هذا التمرين المعملي **5** دقائق.
 
-## <a name="before-you-start"></a>قبل البدء
+## قبل البدء
 
 ستحتاج إلى [اشتراك Azure](https://azure.microsoft.com/free) حيث تمتلك وصول على المستوى الإداري.
 
-## <a name="provision-an-azure-database-for-postgresql-resource"></a>توفير مورد Azure Database for PostgreSQL
+## توفير مورد Azure Database for PostgreSQL
 
 ستقوم في هذا التمرين بتوفير مورد Azure Database for PostgreSQL.
 

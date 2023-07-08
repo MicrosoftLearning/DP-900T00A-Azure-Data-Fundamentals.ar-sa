@@ -4,17 +4,19 @@ lab:
   module: Explore fundamentals of real-time analytics
 ---
 
-# <a name="explore-azure-synapse-data-explorer"></a>استكشاف Azure Synapse Data Explorer
+# استكشاف Azure Synapse Data Explorer
+
+> **ملاحظة**: بسبب تغييرات المنتج، هناك بعض المشكلات المعروفة في قسم **إنشاء قاعدة بيانات واستيعاب البيانات** في هذا المختبر. ونحن نعمل على معالجة هذه المشكلات.
 
 في هذا التمرين، ستستخدم Azure Synapse Data Explorer لتحليل بيانات التسلسل الزمني.
 
 سيستغرق إكمال هذا التمرين المعملي **25** دقيقة.
 
-## <a name="before-you-start"></a>قبل البدء
+## قبل البدء
 
 ستحتاج إلى [اشتراك Azure](https://azure.microsoft.com/free) حيث تمتلك وصول على المستوى الإداري.
 
-## <a name="provision-a-synapse-analytics-workspace"></a>توفير مساحة عمل Synapse Analytics
+## توفير مساحة عمل Synapse Analytics
 
 > **تلميح**: إذا كنت تمتلك Azure Synapse Workspace من التمرين السابق، فتخطَّ هذا القسم وانتقل مباشرة إلى قسم **[إنشاء تجمّع Data Explorer](#create-a-data-explorer-pool)** .
 
@@ -39,9 +41,9 @@ lab:
 1. انتظر حتى يتم إنشاء مساحة العمل - قد يستغرق ذلك خمس دقائق أو نحو ذلك.
 1. عند اكتمال التوزيع انتقل إلى مجموعة الموارد التي تم إنشاؤها ولاحظ أنه يحتوي على مساحة عمل Synapse Analytics وحساب تخزين مستودع البيانات.
 1. حدد مساحة عمل Synapse، وفي صفحة **"Overview"** الخاصة بها، في بطاقة **"Open Synapse Studio"**، حدد **"Open"** لفتح Synapse Studio في علامة تبويب متصفح جديدة. Synapse Studio هي واجهة قائمة على الويب يمكنك استخدامها للعمل مع مساحة عمل Synapse Analytics.
-1. على الجانب الأيسر من Synapse Studio، استخدم الرمز **&rsaquo;&rsaquo;** لتوسيع القائمة - ما يكشف عن الصفحات المختلفة داخل Synapse Studio التي ستستخدمها لإدارة الموارد وتنفيذ مهام تحليل البيانات
+1. على الجانب الأيسر من Synapse Studio، استخدم **&rsaquo;&rsaquo;** الأيقونة لتوسيع القائمة - وهذا يكشف عن الصفحات المختلفة داخل Synapse Studio التي ستستخدمها لإدارة الموارد وتنفيذ مهام تحليل البيانات.
 
-## <a name="create-a-data-explorer-pool"></a>إنشاء تجمع Data Explorer
+## إنشاء تجمع Data Explorer
 
 1. في استوديو Synapse، حدد صفحة **"Manage"**.
 1. حدد علامة التبويب "**Data Explorer pools**"، ثم استخدم رمز " **&#65291; New**" لإنشاء تجمّع جديد بالإعدادات التالية:
@@ -51,7 +53,7 @@ lab:
 1. حدد "**Next: Additional Settings >** " ومكّن الإعداد "**Streaming ingestion**" - ما يمكّن Data Explorer من استيعاب بيانات جديدة من مصدر دفق مثل مراكز الأحداث.
 1. حدد **Review and create** لإنشاء تجمّع Data Explorer، ثم انتظر حتى يتم توزيعه (والذي قد يستغرق 15 دقيقة أو أكثر - ستتغير الحالة من *Creating* إلى *Online*).
 
-## <a name="create-a-database-and-ingest-data"></a>إنشاء قاعدة بيانات واستيعاب البيانات
+## إنشاء قاعدة بيانات واستيعاب البيانات
 
 1. في Synapse Studio، حدد الصفحة **Data**.
 1. تأكد من تحديد علامة التبويب "**Workspace**"، وإذا لزم الأمر، فحدد الرمز " **&#8635;** " في أعلى الجزء الأيسر من الصفحة لتحديث طريقة العرض بحيث تُدرج "**Data Explorer databases**".
@@ -92,7 +94,7 @@ lab:
 
     >                 **تلميح**: استوردت في هذا المثال مقدار ضئيل للغاية من البيانات الدُفعية من ملف، ولا بأس بذلك لأغراض هذا التمرين. في الواقع، يمكنك استخدام Data Explorer لتحليل كميات أكبر بكثير من البيانات، وبما أنك قمت بتمكين استيعاب البث، يمكنك أيضاً تكوين Data Explorer لاستيعاب البيانات في الجدول من مصدر دفق مثل مراكز الأحداث.
 
-## <a name="use-kusto-query-language-to-query-the-table-in-synapse-studio"></a>استخدام لغة الاستعلام Kusto للاستعلام عن الجدول في Synapse Studio
+## استخدام لغة الاستعلام Kusto للاستعلام عن الجدول في Synapse Studio
 
 1. أغلق علامة تبويب مستعرض Azure Data Explorer وارجع إلى علامة التبويب التي تحتوي على Synapse Studio.
 1. في الصفحة **Data**، قم بتوسيع قاعدة بيانات **iot-data** ومجلد **Tables** الخاص بها. ثم في القائمة **...** للجدول **devices**، حدد **New KQL Script** > **Take 1000 rows**.
@@ -137,7 +139,7 @@ lab:
 
 1. أغلق علامة التبويب استعلام KQL، مع تجاهل التغييرات.
 
-## <a name="delete-azure-resources"></a>حذف موارد Azure
+## حذف موارد Azure
 
 الآن بعد الانتهاء من استكشاف Azure Synapse Analytics، يجب حذف الموارد التي أنشأتها لتجنب تكاليف Azure غير الضرورية.
 
