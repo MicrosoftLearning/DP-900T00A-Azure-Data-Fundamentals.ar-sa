@@ -10,7 +10,7 @@ lab:
 
 سيستغرق إكمال هذا التمرين المعملي **5** دقائق.
 
-## قبل البدء
+## قبل أن تبدأ
 
 ستحتاج إلى [اشتراك Azure](https://azure.microsoft.com/free) حيث تمتلك وصول على المستوى الإداري.
 
@@ -18,7 +18,7 @@ lab:
 
 ستقوم في هذا التمرين بتوفير مورد Azure Database for MySQL.
 
-1. في مدخل Microsoft Azure، حدد « **&#65291; Create a resource**» من الزاوية اليسرى العليا وابحث عن *Azure Database for MySQL*. ثم في صفحة نتائج **Azure Database for MySQL**، حدد «**Create**».
+1. في مدخل Microsoft Azure، حدد «**&#65291; Create a resource**» من الزاوية اليسرى العليا وابحث عن *Azure Database for MySQL*. ثم في صفحة نتائج **Azure Database for MySQL**، حدد «**Create**».
 
 1. راجع خيارات Azure Database for MySQL المتوفرة. وبالنسبة إلى **Resource type**، حدد **Flexible Server** وحدد **Create**.
 
@@ -26,7 +26,7 @@ lab:
 
 1. أدخل القيم التالية في صفحة **Create SQL Database**:
     - **الاشتراك**: حدد اشتراك Azure الخاص بك.
-    - **Resource group**: أنشئ مجموعة موارد جديدة وامنحها اسماً تختاره.
+    - **مجموعة الموارد**: قم بإنشاء مجموعة موارد جديدة باسم من اختيارك.
     - **New Server**: أدخل اسمًا مميزًا.
     - **Region**: أي موقع متوفر بالقرب منك.
     - **MySQL Version**: اتركه دون تغيير.
@@ -39,7 +39,7 @@ lab:
 
 1. حدد **Next: Networking**.
 
-1. ضمن "**Firewall rules**"، حدد " **&#65291; Add current client IP address**".
+1. ضمن "**Firewall rules**"، حدد "**&#65291; Add current client IP address**".
 
 1. حدد "**Review + Create**"، ثم حدد "**Create**" لإنشاء قاعدة بيانات Azure MySQL.
 
