@@ -10,7 +10,7 @@ lab:
 
 سيستغرق إكمال هذا التمرين المعملي **5** دقائق.
 
-## قبل البدء
+## قبل أن تبدأ
 
 ستحتاج إلى [اشتراك Azure](https://azure.microsoft.com/free) حيث تمتلك وصول على المستوى الإداري.
 
@@ -18,15 +18,15 @@ lab:
 
 ستقوم في هذا التمرين بتوفير مورد Azure Database for PostgreSQL.
 
-1. في مدخل Microsoft Azure، حدد « **&#65291; Create a resource**» من الزاوية اليسرى العليا وابحث عن *Azure Database for PostgreSQL*. ثم في صفحة **Azure Database for PostgreSQL**، حدد «**Create**».
+1. في مدخل Microsoft Azure، حدد «**&#65291; Create a resource**» من الزاوية اليسرى العليا وابحث عن *Azure Database for PostgreSQL*. ثم في صفحة **Azure Database for PostgreSQL**، حدد «**Create**».
 
-1. راجع قاعدة بيانات Azure لخيارات PostgreSQL المتوفرة، ثم في لوحة **Azure Database for PostgreSQL**، حدد **Flexible server (Recommended)** ، ثم **Create**.
+1. راجع قاعدة بيانات Azure لخيارات PostgreSQL المتوفرة، ثم في لوحة **Azure Database for PostgreSQL**، حدد **Flexible server (Recommended)**، ثم **Create**.
 
     ![لقطة شاشة لخيارات توزيع Azure Database for PostgreSQL](images/postgresql-options.png)
 
 1. أدخل القيم التالية في صفحة **Create SQL Database**:
     - **الاشتراك**: حدد اشتراك Azure الخاص بك.
-    - **Resource group**: أنشئ مجموعة موارد جديدة وامنحها اسماً تختاره.
+    - **مجموعة الموارد**: قم بإنشاء مجموعة موارد جديدة باسم من اختيارك.
     - **New Server**: أدخل اسمًا مميزًا.
     - **Region**: حدد منطقة قريبة منك.
     - **PostgreSQL version**: اتركه دون تغيير.
@@ -39,7 +39,7 @@ lab:
 
 1. حدد **Next: Networking**.
 
-1. ضمن "**Firewall rules**"، حدد " **&#65291; Add current client IP address**".
+1. ضمن "**Firewall rules**"، حدد "**&#65291; Add current client IP address**".
 
 1. حدد "**Review + Create**"، ثم حدد "**Create**" لإنشاء قاعدة بيانات Azure PostgreSQL.
 
