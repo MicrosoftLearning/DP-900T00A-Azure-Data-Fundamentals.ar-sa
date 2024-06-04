@@ -6,7 +6,7 @@
 
 ## تعيين الوحدة النمطية DP-900 للأنشطة المعملية
 
-| الوحدة النمطية | التمرين المعملي | ملف Markdown |
+| الوحدة النمطية | النشاط المعملي | ملف Markdown |
 | --- | --- | --- |
 | 02-استكشف البيانات الارتباطية في Azure | استكشاف Azure SQL Database | [dp900-01-sql-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-01-sql-lab.md) |
 | 03-استكشاف البيانات غير الارتباطية في Azure | استكشاف Azure Storage | [dp900-02-storage-lab.md](https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/blob/master/Instructions/Labs/dp900-02-storage-lab.md) |
