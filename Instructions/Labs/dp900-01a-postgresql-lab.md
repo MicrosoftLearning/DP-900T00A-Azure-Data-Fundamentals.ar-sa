@@ -1,52 +1,79 @@
----
-lab:
-  title: استكشاف Azure Database for PostgreSQL
-  module: Explore relational data in Azure
----
+<div class="Box-sc-g0xbh4-0 eoaCFS js-snippet-clipboard-copy-unpositioned undefined" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><markdown-accessiblity-table data-catalyst=""><table>
+  <thead>
+  <tr>
+  <th>lab</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><div dir="rtl"><table>
+  <thead>
+  <tr>
+  <th>title</th>
+  <th>module</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><div dir="rtl">استكشاف Azure Database for PostgreSQL</div></td>
+  <td><div dir="rtl">Explore relational data in Azure</div></td>
+  </tr>
+  </tbody>
+</table>
+</div></td>
+  </tr>
+  </tbody>
+</table></markdown-accessiblity-table>
 
-# استكشاف Azure Database for PostgreSQL
-
-ستُوفّر في هذا التمرين مورد Azure Database for PostgreSQL في اشتراك Azure.
-
-سيستغرق إكمال هذا التمرين المعملي **5** دقائق.
-
-## قبل أن تبدأ
-
-ستحتاج إلى [اشتراك Azure](https://azure.microsoft.com/free) حيث تمتلك وصول على المستوى الإداري.
-
-## توفير مورد Azure Database for PostgreSQL
-
-ستقوم في هذا التمرين بتوفير مورد Azure Database for PostgreSQL.
-
-1. في مدخل Microsoft Azure، حدد «**&#65291; Create a resource**» من الزاوية اليسرى العليا وابحث عن *Azure Database for PostgreSQL*. ثم في صفحة **Azure Database for PostgreSQL**، حدد «**Create**».
-
-1. راجع قاعدة بيانات Azure لخيارات PostgreSQL المتوفرة، ثم في لوحة **Azure Database for PostgreSQL**، حدد **Flexible server (Recommended)**، ثم **Create**.
-
-    ![لقطة شاشة لخيارات توزيع Azure Database for PostgreSQL](images/postgresql-options.png)
-
-1. أدخل القيم التالية في صفحة **Create SQL Database**:
-    - **الاشتراك**: حدد اشتراك Azure الخاص بك.
-    - **مجموعة الموارد**: قم بإنشاء مجموعة موارد جديدة باسم من اختيارك.
-    - **New Server**: أدخل اسمًا مميزًا.
-    - **Region**: حدد منطقة قريبة منك.
-    - **PostgreSQL version**: اتركه دون تغيير.
-    - **Workload type**: حدد "**Development**".
-    - **Compute + storage**: اتركه دون تغيير.
-    - **Availability zone**: اتركه دون تغيير.
-    - **Enable high availability**: اتركه دون تغيير.
-    - **Admin username**: اكتب اسمك.
-    - **Password** و**Confirm password**: كلمة مرور معقدة مناسبة.
-
-1. حدد **Next: Networking**.
-
-1. ضمن "**Firewall rules**"، حدد "**&#65291; Add current client IP address**".
-
-1. حدد "**Review + Create**"، ثم حدد "**Create**" لإنشاء قاعدة بيانات Azure PostgreSQL.
-
-1. يُرجى الانتظار لاكتمال التوزيع. ثم انتقل إلى المورد الذي تم توزيعه، والذي يجب أن يبدو كما يلي:
-
-    ![لقطة شاشة لمدخل Azure تعرض صفحة Azure Database for PostgreSQL.](images/postgresql-portal.png)
-
-1. راجع خيارات إدارة مورد Azure Database for PostgreSQL.
-
-> **تلميح**: يمكنك حذف مجموعة الموارد التي أنشأتها في هذا التمرين إذا انتهيت من استكشاف Azure Database for PostgreSQL.
+<div class="markdown-heading" dir="rtl"><h1 tabindex="-1" class="heading-element" dir="rtl">استكشاف Azure Database for PostgreSQL</h1><a id="user-content-استكشاف-azure-database-for-postgresql" class="anchor" aria-label="Permalink: استكشاف Azure Database for PostgreSQL" href="#استكشاف-azure-database-for-postgresql"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="rtl">ستُوفّر في هذا التمرين مورد Azure Database for PostgreSQL في اشتراك Azure.</p>
+<p dir="rtl">سيستغرق إكمال هذا التمرين المعملي <strong>5</strong> دقائق.</p>
+<div class="markdown-heading" dir="rtl"><h2 tabindex="-1" class="heading-element" dir="rtl">قبل أن تبدأ</h2><a id="user-content-قبل-أن-تبدأ" class="anchor" aria-label="Permalink: قبل أن تبدأ" href="#قبل-أن-تبدأ"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="rtl">ستحتاج إلى <a href="https://azure.microsoft.com/free" rel="nofollow">اشتراك Azure</a> حيث تمتلك وصول على المستوى الإداري.</p>
+<div class="markdown-heading" dir="rtl"><h2 tabindex="-1" class="heading-element" dir="rtl">توفير مورد Azure Database for PostgreSQL</h2><a id="user-content-توفير-مورد-azure-database-for-postgresql" class="anchor" aria-label="Permalink: توفير مورد Azure Database for PostgreSQL" href="#توفير-مورد-azure-database-for-postgresql"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="rtl">ستقوم في هذا التمرين بتوفير مورد Azure Database for PostgreSQL.</p>
+<ol dir="rtl">
+<li>
+<p dir="rtl">في مدخل Microsoft Azure، حدد «<strong>＋ Create a resource</strong>» من الزاوية اليسرى العليا وابحث عن <em>Azure Database for PostgreSQL</em>. ثم في صفحة <strong>Azure Database for PostgreSQL</strong>، حدد «<strong>Create</strong>».</p>
+</li>
+<li>
+<p dir="rtl">راجع قاعدة بيانات Azure لخيارات PostgreSQL المتوفرة، ثم في لوحة <strong>Azure Database for PostgreSQL</strong>، حدد <strong>Flexible server (Recommended)</strong>، ثم <strong>Create</strong>.</p>
+<p dir="rtl"><a target="_blank" rel="noopener noreferrer" href="https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/blob/main/Instructions/Labs/images/postgresql-options.png"><img src="https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/blob/main/Instructions/Labs/images/postgresql-options.png" alt="لقطة شاشة لخيارات توزيع Azure Database for PostgreSQL" style="max-width: 100%;"></a></p>
+</li>
+<li>
+<p dir="rtl">أدخل القيم التالية في صفحة <strong>Create SQL Database</strong>:</p>
+<ul dir="rtl">
+<li><strong>الاشتراك</strong>: حدد اشتراك Azure الخاص بك.</li>
+<li><strong>مجموعة الموارد</strong>: قم بإنشاء مجموعة موارد جديدة باسم من اختيارك.</li>
+<li><strong>New Server</strong>: أدخل اسمًا مميزًا.</li>
+<li><strong>Region</strong>: حدد منطقة قريبة منك.</li>
+<li><strong>PostgreSQL version</strong>: اتركه دون تغيير.</li>
+<li><strong>Workload type</strong>: حدد "<strong>Development</strong>".</li>
+<li><strong>Compute + storage</strong>: اتركه دون تغيير.</li>
+<li><strong>Availability zone</strong>: اتركه دون تغيير.</li>
+<li><strong>Enable high availability</strong>: اتركه دون تغيير.</li>
+<li><strong>Admin username</strong>: اكتب اسمك.</li>
+<li><strong>Password</strong> و<strong>Confirm password</strong>: كلمة مرور معقدة مناسبة.</li>
+</ul>
+</li>
+<li>
+<p dir="rtl">حدد <strong>Next: Networking</strong>.</p>
+</li>
+<li>
+<p dir="rtl">ضمن "<strong>Firewall rules</strong>"، حدد "<strong>＋ Add current client IP address</strong>".</p>
+</li>
+<li>
+<p dir="rtl">حدد "<strong>Review + Create</strong>"، ثم حدد "<strong>Create</strong>" لإنشاء قاعدة بيانات Azure PostgreSQL.</p>
+</li>
+<li>
+<p dir="rtl">يُرجى الانتظار لاكتمال التوزيع. ثم انتقل إلى المورد الذي تم توزيعه، والذي يجب أن يبدو كما يلي:</p>
+<p dir="rtl"><a target="_blank" rel="noopener noreferrer" href="https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/blob/main/Instructions/Labs/images/postgresql-portal.png"><img src="https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/blob/main/Instructions/Labs/images/postgresql-portal.png" alt="لقطة شاشة لمدخل Azure تعرض صفحة Azure Database for PostgreSQL." style="max-width: 100%;"></a></p>
+</li>
+<li>
+<p dir="rtl">راجع خيارات إدارة مورد Azure Database for PostgreSQL.</p>
+</li>
+</ol>
+<blockquote>
+<p dir="rtl"><strong>تلميح</strong>: يمكنك حذف مجموعة الموارد التي أنشأتها في هذا التمرين إذا انتهيت من استكشاف Azure Database for PostgreSQL.</p>
+</blockquote>
+</article></div>
