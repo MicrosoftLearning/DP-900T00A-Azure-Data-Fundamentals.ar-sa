@@ -72,14 +72,14 @@
 <p dir="rtl">في الجزء على الجانب الأيسر من الصفحة، حدد «<strong>Query editor (preview)</strong>» ثم سجل الدخول باستخدام تسجيل دخول المسؤول وكلمة المرور اللذان حددتهما للخادم.</p>
 <p dir="rtl"><em>إذا ظهرت رسالة خطأ تفيد بأنه غير مسموح بعنوان IP للعميل، حدد الارتباط «<strong>Allowlist IP ...</strong>» في نهاية الرسالة للسماح بالوصول ومحاولة تسجيل الدخول مرة أخرى (أضفت سابقًا عنوان IP لعميل الكمبيوتر إلى قواعد جدار الحماية، ولكن قد يتصل محرر الاستعلام من عنوان مختلف اعتمادًا على تكوين الشبكة.)</em></p>
 <p dir="rtl">يبدو محرر الاستعلام كما يلي:</p>
-<p dir="rtl"><a target="_blank" rel="noopener noreferrer" href="/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/blob/OLPRODLOC/Instructions/Labs/images/query-editor.png"><img src="https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/blob/main/Instructions/Labs/images/query-editor.png" alt="لقطة شاشة لمدخل Microsoft Azure تعرض محرر الاستعلام." style="max-width: 100%;"></a></p>
+<p dir="rtl"><a target="_blank" rel="noopener noreferrer" href="https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/blob/main/Instructions/Labs/images/query-editor.png"><img src="https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/blob/main/Instructions/Labs/images/query-editor.png" alt="لقطة شاشة لمدخل Microsoft Azure تعرض محرر الاستعلام." style="max-width: 100%;"></a></p>
 </li>
 <li>
 <p dir="rtl">وسّع مجلد <strong>Tables</strong> لمشاهدة الجداول في قاعدة البيانات.</p>
 </li>
 <li>
-</li>
 <p dir="rtl">في جزء <strong>Query 1</strong>، أدخل عبارة SQL التالية:</p>
+</li>
 <div class="highlight highlight-source-sql notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">SELECT</span> <span class="pl-k">*</span> <span class="pl-k">FROM</span> <span class="pl-c1">SalesLT</span>.<span class="pl-c1">Product</span>;</pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="SELECT * FROM SalesLT.Product;" tabindex="0" role="button">
       <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
@@ -93,11 +93,11 @@
 </li>
 <li>
 <p dir="rtl">حدد "<strong>▷ Run</strong>" فوق الاستعلام لتشغيله وعرض النتائج، والتي يجب أن تشمل جميع الأعمدة لجميع الصفوف في الجدول "<strong>SalesLT.Product</strong>" كما هو موضح هنا:</p>
-<p dir="rtl"><a target="_blank" rel="noopener noreferrer" href="/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/blob/OLPRODLOC/Instructions/Labs/images/sql-query-results.png"><img src="/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/raw/OLPRODLOC/Instructions/Labs/images/sql-query-results.png" alt="لقطة شاشة لمدخل Microsoft Azure تعرض محرر الاستعلام مع نتائج الاستعلام." style="max-width: 100%;"></a></p>
+<p dir="rtl"><a target="_blank" rel="noopener noreferrer" href="https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/blob/main/Instructions/Labs/images/query-editor.png"><img src="https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals.ar-sa/blob/main/Instructions/Labs/images/query-editor.png" alt="لقطة شاشة لمدخل Microsoft Azure تعرض محرر الاستعلام مع نتائج الاستعلام." style="max-width: 100%;"></a></p>
 </li>
 <li>
-</li>
 <p dir="rtl">استبدل عبارة SELECT بالتعليمات البرمجية التالية، ثم حدد "<strong>▷ Run</strong>" لتشغيل الاستعلام الجديد ومراجعة النتائج (التي لا تتضمن إلا أعمدة "<strong>ProductID</strong>"، و"<strong>Name</strong>"، و"<strong>ListPrice</strong>"، و"<strong>ProductCategoryID</strong>"):</p>
+</li>
 <div class="highlight highlight-source-sql notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">SELECT</span> ProductID, Name, ListPrice, ProductCategoryID
 <span class="pl-k">FROM</span> <span class="pl-c1">SalesLT</span>.<span class="pl-c1">Product</span>;</pre><div class="zeroclipboard-container">
     <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="SELECT ProductID, Name, ListPrice, ProductCategoryID
@@ -112,8 +112,8 @@ FROM SalesLT.Product;" tabindex="0" role="button">
   </div></div>
 </li>
 <li>
-</li>
 <p dir="rtl">الآن حاول الاستعلام التالي الذي يستخدم JOIN للحصول على اسم الفئة من جدول <strong>SalesLT.ProductCategory</strong>:</p>
+</li>
 <div class="highlight highlight-source-sql notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">SELECT</span> <span class="pl-c1">p</span>.<span class="pl-c1">ProductID</span>, <span class="pl-c1">p</span>.<span class="pl-c1">Name</span> <span class="pl-k">AS</span> ProductName,
         <span class="pl-c1">c</span>.<span class="pl-c1">Name</span> <span class="pl-k">AS</span> Category, <span class="pl-c1">p</span>.<span class="pl-c1">ListPrice</span>
 <span class="pl-k">FROM</span> <span class="pl-c1">SalesLT</span>.<span class="pl-c1">Product</span> <span class="pl-k">AS</span> p
